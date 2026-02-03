@@ -1,0 +1,169 @@
+"Chemical","Product (common name)","Family","Target","Specific Target"
+"2,4-D; 2,4-DICHLOROPHENOXYACETIC ACID","2,4-D",,"Herbicide","Broadleaf weeds"
+"2-HYDROXYBIPHENYL","2-Phenylphenol, Dowicide, Torsite, Fungal, Preventol, Nipacide",,"Fungicide",
+"S-METOLACHLOR",,,"Herbicide","Grasses"
+"ABAMECTIN",,"Avermectin","Insecticide","Insects, mites, nematodes"
+"ACEPHATE",,,"Insecticide","Aphids, leaf miners, caterpillars, sawflies, thrips, and spider mites "
+"ACETAMIPRID; N-(6-CHLORO-3-PYRIDYLMETHYL)-N-CYANO-N-METHYLACETAMIDINE","Assail, Chipco","Neonicotinoid","Insecticide","Sucking insects, fruit flies, fleas"
+"ACETOCHLOR","Acenit, Keystone, Guardian, Harness, Relay, Sacemid, Surpass, Top-Hand, Trophy and Winner","Chloroacetanilides","Herbicide",
+"ACLONIFEN",,"Nitrophenyl ether","Herbicide",
+"AMETOCTRADIN",,"Triazolopyrimidine","Fungicide","Blight, downey mildew"
+"AMITRAZ; NSC 324552",,,"Insecticide, Acaricide","mites"
+"ATRAZINE",,"Triazine","Herbicide","Broadleaf and grassy weeds"
+"AZOXYSTROBIN","Amistar",,"Fungicide",
+"BENOXACOR",,,"Herbicide safener",
+"BENTAZON",,"Thiadiazine","Herbicide",
+"BIFENAZATE",,,"Insecticide, Acaricide","Mites"
+"BIXAFEN",,"Pyrazoles","Fungicide",
+"BOSCALID",,"Carboximide ","Fungicide",
+"BROMOXYNIL",,"Nitrile herbicide","Herbicide","Broadleaf weeds"
+"BUPIRIMATE","Nimrod and Roseclear 2","Pyrimidine sulfamates","Fungicide",
+"BUPROFEZIN",,,"Insecticide","mealybugs, leafhoppers and whitefly"
+"CAPTAN",,"Phthalimide","Fungicide",
+"CARBARYL",,"Carbamate","Insecticide",
+"CARBENDAZIM",,"Benzimidazole","Fungicide",
+"CARBOSULFAN",,"Carbamate","Insecticide",
+"CHLORANTRANILIPROL",,"Ryanoid","Insecticide","Lepidoptera (moth), Coleoptera (beetle), Diptera (fly), and Isoptera (termite)"
+"CHLORDECON; KEPONE",,"Organochlorine","Insecticide",
+"CHLORFENAPYR",,"Halogenated pyrroles","Pro-insecticide",
+"CHLOROTHALONIL","Bravo, Echo, and Daconil",,"Fungicide",
+"CHLORPROPHAM","CIPC",,"Herbicide",
+"CHLORPYRIPHOS",,"Organophosphate","Insecticide","Insects, worms"
+"CHLORPYRIPHOS-METHYL",,"Organophosphate","Insecticide","Insects, worms"
+"CLETHODIM (MIXTURE OF ISOMERS)",,"Cyclohexanedione","Herbicide","Grasses"
+"CLOMAZONE","Command, Commence",,"Herbicide","Broadleaf weeds"
+"CLOSANTEL",,"Halogenated salicylanilide ","Parasiticide","Flukes, nematodes, arthropods"
+"CLOTHIANIDIN",,"Neonicotinoid","Insecticide",
+"CYANTRANILIPROLE",,"Ryanoid","Insecticide",
+"BAYTHROID (MIXTURE OF ISOMERS)",,"Pyrethroid","Insecticide",
+"CYMOXANIL",,"Ureas","Fungicide",
+"CYPROCONAZOL (MIXTURE OF DIASTEREOISOMER)",,"Azole","Fungicide",
+"CYPRODINIL",,"Anilinopyrimidine","Fungicide",
+"DELTAMETHRIN",,"Pyrethroid","Insecticide","Malaria vectors"
+"DIAZINON",,"Organophosphate","Insecticide","Cockroaches, silverfish, ants, and fleas"
+"DICAMBA","Dianat, Banvel, Diablo, Oracle and Vanquish",,"Herbicide",
+"DICHLOROPHEN",,,"Multi-target","Fungicide, herbicide, bactericide, algicide, anticestodal"
+"DIFENOCONAZOL",,"Triazole","Fungicide",
+"DIFLUBENZURON",,"Benzoylurea","Insecticide",
+"DIFLUFENICAN",,,"Herbicide","Broadleaf and grassy weeds"
+"DIMETHENAMID",,,"Herbicide",
+"DIMETHOATE","preparation B-58","Organophosphate","Insecticide, Acaricide",
+"DINOTEFURAN",,"Neonicotinoid","Insecticide",
+"DITHIANON",,"Naphthodithiin","Fungicide",
+"DIURON","DCMU","Arylurea","Herbicide",
+"EPOXICONAZOLE",,"Azole","Fungicide",
+"ETONFENPROX",,"Pyrethroid","Insecticide",
+"FENAZAFLOR",,,"Insecticide, Acaricide","Spider mites"
+"FENBUCONAZOL",,"Triazole","Fungicide",
+"FENHEXAMID",,"Hydroxyanilide","Fungicide",
+"FENOBUCARB","BPMC","Carbamate","Insecticide","Hemiptera"
+"FENOXAPROP RACEMATE",,,"Herbicide",
+"FENPROPATHRIN","Danitol, Meothrin, Tame","Pyrethroid","Insecticide",
+"FENPYROXIMATE",,"Pyrazoles","Insecticide, Acaricide",
+"FENTHION",,"Organophosphate","Insecticide",
+"FIPRONIL",,"Phenylpyrazole","Insecticide",
+"FLONICAMID",,"Pyridine","Insecticide","aphids, whiteflies, and thrips"
+"FLORASULAM",,"Triazolopyrimidine sulfonanilide","Herbicide",
+"FLUAZINAM",,"Diarylamine","Fungicide",
+"FLUBENDIAMID",,"Ryanoid","Insecticide",
+"FLUDIOXONIL",,,"Fungicide",
+"FLUFENACET",,"Oxyacetanilide","Herbicide",
+"FLUMIOXAZIN",,,"Herbicide",
+"FLUOPICOLIDE",,"Acylpicolide","Fungicide",
+"FLUOPYRAM",,,"Multi-target","Fungicide, nematicide"
+"FLUPYRADIFURONE",,"Butenolide","Insecticide",
+"FLUROXYPYR",,"Auxin","Herbicide",
+"FLUTRIAFOL",,,"Fungicide",
+"FLUXAPYROXAD",,"Pyrazole-carboxamide","Fungicide",
+"FOLPET",,"Phthalimide","Fungicide",
+"FOMESAFEN",,"Nitrophenyl ether","Herbicide",
+"GLYPHOSATE",,"Organophosphate","Herbicide",
+"HALOXYFOP",,"Pyridine","Herbicide",
+"HEXACHLOROPHENE","Nabac","Organochlorine","Multi-target","Fungicide, plant bactericide, and acaricide"
+"HEXYTHIAZOX",,,"Insecticide, Acaricide","Mites, mite eggs"
+"IMAZALIL","Freshgard, Fungaflor, and Nuzone",,"Fungicide",
+"IMAZAMOX",,,"Herbicide",
+"IMAZETHAPYR",,,"Herbicide","Broadleaf and grassy weeds"
+"IMIDACLOPRID",,"Neonicotinoid","Insecticide",
+"INDOXACARB",,"Oxadiazine","Insecticide","Lepidoptera "
+"IPRODION",,"Hydantoin","Multi-target","Fungicide, nematicide"
+"IPROVALICARB",,,"Fungicide","Oomycetes"
+"ISOPROTHIOLANE",,,"Multi-target","Insecticide, Fungicide"
+"ISOXAFLUTOLE",,,"Herbicide",
+"BIFENTHRIN",,"Pyrethroid","Insecticide",
+"LAMBDA-CYHALOTHRIN",,"Pyrethroid","Insecticide",
+"LINURON",,"Ureas","Herbicide",
+"MALATHION",,"Organophosphate","Insecticide",
+"MANCOZEB",,"Dithiocarbamate","Fungicide",
+"MANDIPROPAMID",,"Mandelamide ","Fungicide",
+"DINOCAP (MIXTURE OF ISOMERS)",,,"Fungicide","Fungicide, Acaricide"
+"MESOTRION","Callisto, Tenacity",,"Herbicide",
+"METALAXYL",,"Acylalanine","Fungicide",
+"METALAXYL-M",,"Acylalanine","Fungicide",
+"METAMITRON",,"Triazinone","Herbicide",
+"METHAMIDOPHOS",,"Organophosphate","Insecticide",
+"METHOMYL",,"Carbamate","Insecticide",
+"METHOXYFENOZIDE",,,"Insecticide",
+"METRAFENONE",,"Benzophenone","Fungicide",
+"METRIBUZIN",,,"Herbicide",
+"MONOCROTOPHOS",,"Organophosphate","Insecticide",
+"MONOSULTAP",,,"Insecticide",
+"MYCLOBUTANIL",,"Triazole","Fungicide",
+"NICOSULFURON",,"Sulfonylurea","Herbicide",
+"NOVALURON",,"Benzoylurea","Insecticide",
+"OXYFLUORFEN","Goal, Galigan",,"Herbicide","Broadleaf and grassy weeds"
+"PENCONAZOL",,"Triazole","Fungicide",
+"PENDIMETHALIN",,"Dinitroaniline","Herbicide",
+"PENTHIOPYRAD",,,"Fungicide",
+"PHOSMET",,"Organophosphate","Insecticide",
+"PICOXYSTROBIN",,"Eonate ester","Fungicide",
+"PINOXADEN",,"Phenylpyrazolin","Herbicide","Grasses"
+"PIPERONYL BUTOXIDE","PBO",,"Synergist","Enhances the potency of certain pesticides such as carbamates, pyrethrins, pyrethroids, and rotenone"
+"PIRIMICARB",,"Carbamate","Insecticide","Aphids"
+"PIRIMIPHOS-METHYL",,"Phosphorothioate","Insecticide",
+"PROCHLORAZ",,"Imidazole","Fungicide",
+"PROFENOFOS",,"Organophosphate","Insecticide",
+"PROMETRYN",,"Triazine","Herbicide",
+"PROPAMOCARB",,,"Fungicide","Oomycetes"
+"PROPANIL",,,"Herbicide",
+"PROPICONAZOLE",,"Triazole","Fungicide",
+"PROSULFOCARB",,,"Herbicide",
+"PROTHIOCONAZOLE",,"Triazole","Fungicide",
+"PYMETROZIN",,"Triazine","Insecticide",
+"PYRACLOSTROBIN",,"Strobilurin","Fungicide",
+"PYRIDABEN",,"Organochlorine","Insecticide, Acaricide",
+"PYRIMETHANIL",,,"Fungicide",
+"PYRIPROXIFEN",,,"Insecticide",
+"QUINOXYFEN",,"Quinoline","Fungicide",
+"SAFLUFENACIL",,"Pyrimidinedione","Herbicide",
+"SPINOSAD (MIXTURE OF SPINOSYN A UND D)",,,"Insecticide",
+"SPIRODICLOFEN",,,"Insecticide, Acaricide",
+"SPIROMESIFEN",,,"Insecticide",
+"SPIROTETRAMAT",,"Keto-enol","Insecticide",
+"SULFUR",,,"Multi-target","Insecticide, fungicide and rodenticide "
+"TEBUCONAZOLE",,"Triazole","Fungicide",
+"THIABENDAZOLE","TBZ",,"Multi-target","Fungicide, Parasiticide"
+"THIACLOPRID",,"Neonicotinoid","Insecticide",
+"THIAMETHOXAM",,"Neonicotinoid","Insecticide",
+"THIOPHANATE-METHYL",,,"Fungicide",
+"TOLFENPYRAD",,,"Insecticide, Acaricide",
+"TRICYCLAZOLE",,"Triazolobenzothiazole","Fungicide",
+"TRIFLOXYSTROBIN",,"Strobilurin","Fungicide",
+"MGK 264 (MIXTURE OF ISOMERS)",,,"Synergist","Enhancing the potency of pyrethroid ingredients"
+"LINDAN",,"Organochlorine","Insecticide",
+"THIENCARBAZONE-METHYL",,,"Herbicide","Broadleaf and grassy weeds"
+"CYHALOFOP-BUTYL",,,"Herbicide",
+"CLOPYRALID ",,"Picolinic acid","Herbicide","Broadleaf weeds"
+"CHLORMEQUAT CHLORIDE",,,"Plant Growth Regulator","Adjuvant for herbicides by retarding their oxidative disposal by plants"
+"MEPIQUAT CHLORIDE",,,"Plant Growth Regulator",
+"METSULFURON-METHYL",,"Sulfonylurea","Herbicide","Broadleaf weeds"
+"4,4-DDT",,"Organochlorine","Insecticide",
+"EMAMECTIN BENZOATE",,,"Insecticide",
+"DODIN",,,"Fungicide","Also bactericide"
+"TRIADIMENOL A",,"Triazole","Fungicide",
+"DICHLORVOS; DDVP",,"Organophosphate","Insecticide",
+"FORMETANATE HYDROCHLORIDE",,,"Insecticide, Acaricide",
+"DIMETHOMORPH (MIXTURE OF E AND Z ISOMERS)",,,"Fungicide","Mildew and Root Rot"
+"CYPERMETHRIN (MIXTURE OF ISOMERS)",,"Pyrethroid","Insecticide",
+"PERMETHRIN (MIXTURE OF CIS AND TRANS ISOMERE)",,"Pyrethroid","Insecticide",
+"WARFARIN; COUMAFENE",,,"Rodenticide",

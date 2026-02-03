@@ -1,0 +1,57 @@
+# R files
+.Rhistory
+.Rapp.history
+.RData
+.Ruserdata
+*.Rproj.user/
+
+# R Environment Variables
+.Renviron
+
+# Session Data files
+.RDataTmp
+
+# Output files
+*.html
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.eps
+
+# RStudio files
+.Rproj.user/
+*.Rproj
+
+# knitr and R Markdown
+*_cache/
+/cache/
+*.knit.md
+*.utf8.md
+
+# Temporary files
+*~
+\#*\#
+.\#*
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Large data files (uncomment if needed)
+# *.zip
+# *.gz
+# *.tar
+
+# Sensitive data
+*.env
+credentials.*

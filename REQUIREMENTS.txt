@@ -1,0 +1,66 @@
+# R Package Requirements
+# Install these packages before running Project_Main_Code.R
+
+# CRAN packages
+# Install with: install.packages("package_name")
+
+factoextra
+circlize
+dplyr
+tidyr
+plotly
+ggplot2
+ggdendro
+tibble
+permute
+mclust
+DescTools
+plot3D
+berryFunctions
+plotrix
+gridExtra
+MASS
+shape
+formattable
+lattice
+vegan
+ggrepel
+ape
+phytools
+glmm
+wrapr
+
+# Bioconductor packages
+# Install with:
+# if (!require("BiocManager", quietly = TRUE))
+#     install.packages("BiocManager")
+# BiocManager::install("ComplexHeatmap")
+
+ComplexHeatmap
+
+# GitHub packages
+# Install with: devtools::install_github("repo/package")
+# devtools::install_github("YuLab-SMU/ggtree")
+# devtools::install_github("houyunhuang/ggcor")
+
+ggtree
+ggcor
+
+# Installation script (run in R):
+#
+# cran_packages <- c(
+#   "factoextra", "circlize", "dplyr", "tidyr", "plotly", "ggplot2",
+#   "ggdendro", "tibble", "permute", "mclust", "DescTools", "plot3D",
+#   "berryFunctions", "plotrix", "gridExtra", "MASS", "shape", "formattable",
+#   "lattice", "vegan", "ggrepel", "ape", "phytools", "glmm", "wrapr"
+# )
+# install.packages(cran_packages)
+#
+# if (!require("BiocManager", quietly = TRUE))
+#     install.packages("BiocManager")
+# BiocManager::install("ComplexHeatmap")
+#
+# if (!require("devtools", quietly = TRUE))
+#     install.packages("devtools")
+# devtools::install_github("YuLab-SMU/ggtree")
+# devtools::install_github("houyunhuang/ggcor")
