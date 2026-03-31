@@ -47,10 +47,17 @@
 ehthumbs.db
 Thumbs.db
 
-# Large data files (uncomment if needed)
+# Large data files
+data/community-growth-curves.csv
+data/isolate-growth-curves.csv
+data/wrksp.RData
 # *.zip
 # *.gz
 # *.tar
+
+# Write-up and references (binary/large, not tracked in git)
+write-up/
+references/
 
 # Sensitive data
 *.env

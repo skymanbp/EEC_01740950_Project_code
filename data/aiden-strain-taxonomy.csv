@@ -1,24 +1,22 @@
-Species,Strain.id
-Pseudomonas sp.,74
-Pseudomonas sp.,85
-Pseudomonas sp.,88
-Pseudomonas sp.,100
-Pseudomonas sp.,186
-Bacillus sp.,302
-Bacillus sp.,306
-Bacillus sp.,322
-Bacillus sp.,331
-Bacillus sp.,333
-Bacillus sp.,350
-Bacillus sp.,353
-Bacillus sp.,371
-Bacillus sp.,374
-Bacillus sp.,380
-Bacillus sp.,390
-Enterobacter sp.,398
-Enterobacter sp.,436
-Enterobacter sp.,442
-Enterobacter sp.,448
-Enterobacter sp.,487
-Enterobacter sp.,527
-Enterobacter sp.,565
+Species,Phylum,Class,Order,Family,Genus,Strain.id
+Bosea massiliensis 63287,Proteobacteria,Alphaproteobacteria,Hyphomicrobiales,Boseaceae,Bosea,85
+Prolinoborus fasciculus,Proteobacteria,Betaproteobacteria,Neisseriales,Neisseriaceae,Prolinoborus,88
+Pseudomonas baetica,Proteobacteria,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,100
+Paenibacillus castaneae,Firmicutes,Bacilli,Bacillales,Paenibacillaceae,Paenibacillus,186
+Pseudomonas vancouverensis,Proteobacteria,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,322
+Pseudomonas mandelii,Proteobacteria,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,333
+Serratia sp. 2015-2462-01,Proteobacteria,Gammaproteobacteria,Enterobacterales,Yersiniaceae,Serratia,350
+Aeromonas sp. AE235,Proteobacteria,Gammaproteobacteria,Aeromonadales,Aeromonadaceae,Aeromonas,353
+Aeromonas sobria,Proteobacteria,Gammaproteobacteria,Aeromonadales,Aeromonadaceae,Aeromonas,374
+Pseudomonas peli,Proteobacteria,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,380
+Microbacterium arborescens,Actinobacteria,Actinomycetia,Micrococcales,Microbacteriaceae,Microbacterium,390
+Sphingobium czechense LL01,Proteobacteria,Alphaproteobacteria,Sphingomonadales,Sphingomonadaceae,Sphingobium,398
+Brevundimonas staleyi,Proteobacteria,Alphaproteobacteria,Caulobacterales,Caulobacteraceae,Brevundimonas,436
+Hymenobacter glaciei,Bacteroidetes,Cytophagia,Cytophagales,Hymenobacteraceae,Siccationidurans,442
+Carnobacterium gallinarum,Firmicutes,Bacilli,Lactobacillales,Carnobacteriaceae,Carnobacterium,448
+Aeromonas popoffii,Proteobacteria,Gammaproteobacteria,Aeromonadales,Aeromonadaceae,Aeromonas,487
+Arthrobacter humicola,Actinobacteria,Actinomycetia,Micrococcales,Micrococcaceae,Arthrobacter,527
+Fodinibacter sp. PSGM2-16,Actinobacteria,Actinomycetia,Micrococcales,Intrasporangiaceae,Oryzobacter,565
+Bacillus soli,Firmicutes,Bacilli,Bacillales,Bacillaceae,Neobacillus,74
+Pseudomonas baetica,Proteobacteria,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,331
+Rhizobium herbae,Proteobacteria,Alphaproteobacteria,Hyphomicrobiales,Rhizobiaceae,Rhizobium,371
