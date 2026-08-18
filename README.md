@@ -6,14 +6,14 @@ Analysis code and data for the research paper:
 
 ## Background
 
-This project investigates how 21 environmental bacterial isolates respond to approximately 190 biocide compounds (pesticides, herbicides, fungicides, and insecticides) using high-throughput 96-well microplate growth assays. The analysis pipeline quantifies growth via area under the curve (AUC) of OD600 readings, identifies chemicals with statistically significant effects, clusters chemicals by bacterial response profiles, and tests for phylogenetic signal in the phenotypic responses.
+This project investigates how 21 environmental bacterial isolates respond to 168 distinct biocide compounds (pesticides, herbicides, fungicides, and insecticides) using high-throughput 96-well microplate growth assays. The analysis pipeline quantifies growth via area under the curve (AUC) of OD600 readings, identifies chemicals with statistically significant effects, clusters chemicals by bacterial response profiles, and tests for phylogenetic signal in the phenotypic responses.
 
 ## Experimental Design
 
 | Parameter | Value |
 |-----------|-------|
 | Bacterial strains | 21 isolates (IDs: 74, 85, 88, 100, 186, 322, 331, 333, 350, 353, 371, 374, 380, 390, 398, 436, 442, 448, 487, 527, 565) |
-| Chemical libraries | PS1 and PS2, ~96 compounds each |
+| Chemical libraries | PS1 and PS2, 84 compounds each (96 wells incl. DMSO controls and blanks) |
 | Replicates | 3 technical replicates per strain-library combination |
 | Plate format | 96-well microplate (rows A-H, columns 1-12) |
 | Measurement | OD600, 30-min intervals over 72 hours |
