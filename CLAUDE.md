@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This is a **biological science research project** analyzing bacterial growth responses to biocide chemicals (pesticides, herbicides, fungicides, insecticides). The codebase is an R-based analysis pipeline (`Project_Main_Code.R`) processing 96-well microplate OD600 growth curve data for 21 bacterial strains (spanning 4 phyla: Proteobacteria, Firmicutes, Actinobacteria, Bacteroidetes; 15 genera) across ~190 chemical compounds, with downstream statistical and phylogenetic analyses.
+This is a **biological science research project** analyzing bacterial growth responses to biocide chemicals (pesticides, herbicides, fungicides, insecticides). The codebase is an R-based analysis pipeline (`Project_Main_Code.R`) processing 96-well microplate OD600 growth curve data for 21 bacterial strains (spanning 4 phyla: Proteobacteria, Firmicutes, Actinobacteria, Bacteroidetes; 15 genera) across 168 distinct chemical compounds (libraries PS1 and PS2, 84 compounds each), with downstream statistical and phylogenetic analyses.
 
 ## Scientific Rigor Requirements
 
