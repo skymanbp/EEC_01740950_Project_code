@@ -62,3 +62,6 @@ references/
 # Sensitive data
 *.env
 credentials.*
+# cc-enforcer index / cc-memory state: machine-local, never content
+.ce/
+.ccm/
