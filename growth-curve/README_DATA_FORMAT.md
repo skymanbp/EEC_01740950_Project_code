@@ -23,8 +23,8 @@ This folder should contain growth curve data files.
 ```
 Time	Temperature	A1	A2	A3	...	H12
 0:00:00	37.0	0.05	0.06	0.05	...	0.05
-0:30:00	37.0	0.08	0.09	0.08	...	0.07
-1:00:00	37.0	0.12	0.14	0.11	...	0.10
+1:00:00	37.0	0.08	0.09	0.08	...	0.07
+2:00:00	37.0	0.12	0.14	0.11	...	0.10
 ...
 72:00:00	37.0	1.25	1.32	1.18	...	0.95
 ```
@@ -35,7 +35,7 @@ Time	Temperature	A1	A2	A3	...	H12
 - **Temperature**: Recorded but removed during analysis
 - **Wells**: 96 wells in standard microplate format (A-H rows, 1-12 columns)
 - **OD600**: Optical density readings at 600nm
-- **Duration**: Typically 72 hours with 30-minute intervals
+- **Duration**: 72 hours at 1-hour intervals — 73 readings per plate, except strains 353 and 527 which have 65 (a 9-hour gap between the 6 h and 15 h readings, i.e. 8 missing readings)
 
 ## Required Strains
 

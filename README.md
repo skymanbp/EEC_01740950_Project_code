@@ -14,9 +14,9 @@ This project investigates how 21 environmental bacterial isolates respond to 168
 |-----------|-------|
 | Bacterial strains | 21 isolates (IDs: 74, 85, 88, 100, 186, 322, 331, 333, 350, 353, 371, 374, 380, 390, 398, 436, 442, 448, 487, 527, 565) |
 | Chemical libraries | PS1 and PS2, 84 compounds each (96 wells incl. DMSO controls and blanks) |
-| Replicates | 3 technical replicates per strain-library combination |
+| Replicates | 3 technical replicates per strain-library combination (strains 85, 398 and 436 are incomplete: 4, 4 and 3 of 6 plates) |
 | Plate format | 96-well microplate (rows A-H, columns 1-12) |
-| Measurement | OD600, 30-min intervals over 72 hours |
+| Measurement | OD600, 1-hour intervals over 72 hours (73 readings per plate; 65 for strains 353 and 527) |
 | Control | DMSO solvent control wells |
 | Position control | Plate layout rotation across replicates 2 and 3 |
 
@@ -68,13 +68,16 @@ The analysis is performed in `Project_Main_Code.R`, organized into the following
 ├── Project_Main_Code.R                  # Main analysis script (~880 lines)
 ├── REQUIREMENTS.txt                     # R package dependencies
 ├── CLAUDE.md                            # AI assistant project guidelines
+├── A Broad Examination on Bacterial Responses to a Wide Range of Biocide Chemicals and Exploration of Potential ‘Biosensor’ Strategy .pdf
+│                                        # Final manuscript, tracked in git (byte-identical
+│                                        #   to write-up/Zhang_EEC_MSc_01740950.pdf)
 │
 ├── data/                                # All data files
 │   ├── ps1.csv                          # Chemical library 1 plate layout
 │   ├── ps2.csv                          # Chemical library 2 plate layout
 │   ├── chemicaldetails.csv              # Chemical metadata (family, target type)
 │   ├── aiden-strain-taxonomy.csv        # Full strain taxonomy (Species through Genus)
-│   ├── spline-fits.csv                  # Pre-computed spline AUC for all strains/wells
+│   ├── spline-fits.csv                  # Collaborator spline AUC (strains 74, 331, 371; also 302, 306)
 │   ├── chemical_table_final.csv         # Clustering output (Cluster, Target, Dir1, Dir2)
 │   ├── phylo.io_n.nwk                   # Phylogenetic tree (Newick, 21 strains)
 │   ├── phylo.io_new.nwk                 # Re-rooted phylogenetic tree
@@ -90,7 +93,9 @@ The analysis is performed in `Project_Main_Code.R`, organized into the following
 │   ├── isolate-growth-curves.csv        # Isolate-level growth data (325 MB, not in git)
 │   └── wrksp.RData                      # Saved R workspace with intermediate results (not in git)
 │
-├── growth-curve/                        # Raw 96-well OD600 time series
+├── growth-curve/                        # Raw 96-well OD600 time series, 18 of the 21 strains
+│                                        #   (74, 331, 371 have no raw curves; their AUC comes
+│                                        #   pre-computed from data/spline-fits.csv)
 │   ├── {strain}_p_{library}_r_{replica}.txt
 │   ├── _{strain}_p_{library}_r_{replica}_2.txt  # Non-standard files (strains 85, 398, 436)
 │   └── README_DATA_FORMAT.md
@@ -103,12 +108,12 @@ The analysis is performed in `Project_Main_Code.R`, organized into the following
 │   ├── load.R                           # Data loading snippet
 │   └── Copy.R                           # Earlier version of main script (~576 lines)
 │
-├── write-up/                            # Manuscript and presentation (not in git)
+├── write-up/                            # Manuscript and presentation (directory not in git)
 │   ├── Draft.docx, Draft_2.docx         # Manuscript drafts
 │   ├── Draft-TS.pdf, Draft_2-TS.pdf     # Supervisor-annotated versions
 │   ├── Draft_2.pdf, Draft_3.pdf         # PDF exports
 │   ├── Presentation.pptx                # Defence/seminar presentation
-│   └── Zhang_EEC_MSc_01740950.pdf       # Final submitted manuscript
+│   └── Zhang_EEC_MSc_01740950.pdf       # Final submitted manuscript (copy tracked at repo root)
 │
 └── references/                          # Reference literature (not in git)
     ├── Latent_functional_diversity_may_accelerate_microbi.pdf
@@ -147,8 +152,11 @@ devtools::install_github("houyunhuang/ggcor")
 ## Usage
 
 1. Open `Project_Main_Code.R` in RStudio.
-2. Update the `setwd()` paths at the top of the script to point to your local `growth-curve/` directory.
-3. Run section by section (the script is designed for interactive execution, not batch mode).
+2. Update the three `setwd()` paths: lines 5 and 129 to your local `growth-curve/` directory, and line 126 to a separate folder holding only the 11 `_{strain}_p_{library}_r_{replica}_2.txt` files (strains 85, 398, 436).
+3. Copy the `data/` inputs into the `growth-curve/` working directory from step 2 (the one set at lines 5 and 129), or prefix the bare filenames in the script with `data/`. The script reads `aiden-strain-taxonomy.csv` (line 41), `spline-fits.csv` (177), `ps1.csv` / `ps2.csv` (220-221), `chemicaldetails.csv` (485) and `phylo.io_n.nwk` / `phylo.io_new.nwk` (748, 753) by bare filename relative to the working directory, so without this it stops at line 41.
+4. Run section by section (the script is designed for interactive execution, not batch mode).
+
+**Note:** Lines 131 and 138-140 take strain, library and replica from fixed positions in the underscore-split *absolute* path of each plate file, so the folder used at line 126 must contain exactly one underscore before the filename. Any other underscore count mislabels strains 85, 398 and 436 silently rather than erroring; splitting `basename(filenames)` and using indexes 2/4/6 removes that dependency.
 
 **Note:** The Dunnett's test step (Section 5) is computationally intensive and may take several hours depending on hardware.
 

@@ -70,7 +70,7 @@ Raw OD600 (.txt) --> remove temperature --> clean time format
 - `data/chemicaldetails.csv` — Chemical metadata (family, target organism type)
 - `data/aiden-strain-taxonomy.csv` — Strain ID to species mapping
 - `data/phylo.io_n.nwk` — Newick format phylogenetic tree (21 strains)
-- `data/spline-fits.csv` — Pre-computed spline AUC for all strains and wells (6049 rows, includes compound metadata)
+- `data/spline-fits.csv` — Collaborator-contributed pre-computed spline AUC covering strains 74, 331 and 371, plus 302, 306 and six non-numeric isolate IDs (PSA_SUA5_8, PSA_SUH4_5, R2A_MUC9_2, R2A_RUF3_11, R2A_SUG4_13, R2A_SUH4_15); 6048 data rows, includes compound metadata. None of the 15 file-based main strains appear in it.
 - `data/chemical_table_final.csv` — Clustering analysis output (Cluster assignment, Target, Dir1/Dir2 coordinates)
 - `data/community-growth-curves.csv` — Community-level consolidated growth data (32 MB, git-ignored)
 - `data/isolate-growth-curves.csv` — Isolate-level consolidated growth data (325 MB, git-ignored)
@@ -79,7 +79,7 @@ Raw OD600 (.txt) --> remove temperature --> clean time format
 
 ## Working Conventions
 
-- The script uses hardcoded `setwd()` paths that must be updated per machine. The primary working directory should be set to the `growth-curve/` folder, with `data/` files referenced by relative paths from there.
+- The script uses hardcoded `setwd()` paths that must be updated per machine (lines 5, 126 and 129). The primary working directory should be set to the `growth-curve/` folder. The `data/` inputs are read by bare filename with no path prefix (lines 41, 177, 220-221, 485, 748, 753), so they must sit in that working directory unless the reads are re-pathed to `data/`.
 - All strain IDs are character strings (e.g., `"88"`, `"100"`), not integers. Maintain this throughout.
 - Chemical names use uppercase as they appear in the library CSV files (e.g., `"ABAMECTIN"`, `"DMSO"`). Do not change case.
 - The analysis pipeline is designed to run section-by-section interactively in RStudio, not as a batch script.
@@ -90,4 +90,4 @@ Raw OD600 (.txt) --> remove temperature --> clean time format
 - Do not auto-generate figures or tables that might be mistaken for actual experimental results.
 - Do not suggest alternative statistical methods without explaining the assumptions, trade-offs, and how they compare to the existing approach.
 - Do not install or suggest packages beyond those listed in `REQUIREMENTS.txt` without user approval.
-- Do not commit generated output files (plots, CSVs) to the repository — they are excluded by `.gitignore`.
+- Do not commit generated plots to the repository — `.gitignore` excludes html/pdf/png/jpg/gif/svg/eps. Generated CSVs are *not* ignored (there is no `*.csv` rule), so do not assume git will drop them; `data/chemical_table_final.csv` is the one generated CSV that is deliberately tracked.
