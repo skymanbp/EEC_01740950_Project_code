@@ -1,6 +1,9 @@
 # Growth Curve Data Format
 
-This folder should contain growth curve data files.
+This folder holds the raw growth curve data: 101 tab-separated plate files covering 18 of the
+21 strains (85, 88, 100, 186, 322, 333, 350, 353, 374, 380, 390, 398, 436, 442, 448, 487, 527,
+565). AUC for the remaining three strains (74, 331, 371) comes pre-computed from
+`data/spline-fits.csv`.
 
 ## File Naming Convention
 
@@ -16,23 +19,27 @@ This folder should contain growth curve data files.
 
 - **Format**: Tab-separated values (.txt)
 - **Header row**: Column names
-- **Columns**: Time, Temperature, A1, A2, ..., H12 (96 wells)
+- **Columns**: `Time`, `T° 600`, A1, A2, ..., H12 (96 wells; 98 columns in total)
+- **Encoding**: Latin-1 — the degree sign in the `T° 600` header is the single byte `0xB0`
 
 ### Sample Data Structure
 
+First and last rows of `88_p_1_r_1.txt`, middle columns elided:
+
 ```
-Time	Temperature	A1	A2	A3	...	H12
-0:00:00	37.0	0.05	0.06	0.05	...	0.05
-1:00:00	37.0	0.08	0.09	0.08	...	0.07
-2:00:00	37.0	0.12	0.14	0.11	...	0.10
+Time	T° 600	A1	A2	A3	...	H12
+0:00:06	25.0	0.043	0.042	0.054	...	0.046
+1:00:03	24.9	0.043	0.043	0.055	...	0.047
+2:00:05	24.7	0.045	0.044	0.056	...	0.048
 ...
-72:00:00	37.0	1.25	1.32	1.18	...	0.95
+72:01:10	30.5	0.590	0.616	0.678	...	0.573
 ```
 
 ## Notes
 
 - **Time format**: HH:MM:SS (converted to hours in analysis)
-- **Temperature**: Recorded but removed during analysis
+- **`T° 600`**: Incubator temperature, recorded and then dropped by `remove.temp()`
+  (`Project_Main_Code.R:47-50`), which selects columns `c(1, 3:98)` by position, not by name
 - **Wells**: 96 wells in standard microplate format (A-H rows, 1-12 columns)
 - **OD600**: Optical density readings at 600nm
 - **Duration**: 72 hours at 1-hour intervals — 73 readings per plate, except strains 353 and 527 which have 65 (a 9-hour gap between the 6 h and 15 h readings, i.e. 8 missing readings)
@@ -42,12 +49,13 @@ Time	Temperature	A1	A2	A3	...	H12
 **Main strains:**
 88, 100, 186, 322, 333, 350, 353, 374, 380, 390, 442, 448, 487, 527, 565
 
-**Special strains (in 'weird' subfolder):**
-436, 398, 85
+**Special-format strains:** 436, 398, 85
+
+Their 11 files sit flat in this folder alongside the rest, named
+`_{strain}_p_{library}_r_{replica}_2.txt` (leading underscore, `_2` suffix): 4 files for 85,
+4 for 398, 3 for 436. `Project_Main_Code.R:126` reads them from a separate directory
+(`setwd("D:/Masters_project/data/weird")`), so running the script means copying just these 11
+files somewhere and pointing that line at it — there is no `weird/` directory in the repo.
 
 **Extra strains (from spline-fits.csv):**
 331, 371, 74
-
-## Missing Data Notice
-
-The original growth curve data files need to be added to this folder for the analysis to run successfully.

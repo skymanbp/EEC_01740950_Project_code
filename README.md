@@ -77,7 +77,9 @@ The analysis is performed in `Project_Main_Code.R`, organized into the following
 │   ├── ps2.csv                          # Chemical library 2 plate layout
 │   ├── chemicaldetails.csv              # Chemical metadata (family, target type)
 │   ├── aiden-strain-taxonomy.csv        # Full strain taxonomy (Species through Genus)
-│   ├── spline-fits.csv                  # Collaborator spline AUC (strains 74, 331, 371; also 302, 306)
+│   ├── spline-fits.csv                  # Collaborator spline AUC, 6048 rows over 11 strain IDs
+│   │                                    #   (74, 302, 306, 331, 371 and six PSA_/R2A_ isolates,
+│   │                                    #   listed in CLAUDE.md); the pipeline reads 74, 331, 371
 │   ├── chemical_table_final.csv         # Clustering output (Cluster, Target, Dir1, Dir2)
 │   ├── phylo.io_n.nwk                   # Phylogenetic tree (Newick, 21 strains)
 │   ├── phylo.io_new.nwk                 # Re-rooted phylogenetic tree
@@ -113,7 +115,10 @@ The analysis is performed in `Project_Main_Code.R`, organized into the following
 │   ├── Draft-TS.pdf, Draft_2-TS.pdf     # Supervisor-annotated versions
 │   ├── Draft_2.pdf, Draft_3.pdf         # PDF exports
 │   ├── Presentation.pptx                # Defence/seminar presentation
-│   └── Zhang_EEC_MSc_01740950.pdf       # Final submitted manuscript (copy tracked at repo root)
+│   ├── Zhang_EEC_MSc_01740950.pdf       # Final submitted manuscript (copy tracked at repo root)
+│   └── A Broad Examination on Bacterial Responses to a Wide Range of Biocide Chemicals and Exploration of Potential ‘Biosensor’ Strategy .pdf
+│                                        # Second copy of the manuscript, byte-identical to
+│                                        #   Zhang_EEC_MSc_01740950.pdf and the root-level PDF
 │
 └── references/                          # Reference literature (not in git)
     ├── Latent_functional_diversity_may_accelerate_microbi.pdf
